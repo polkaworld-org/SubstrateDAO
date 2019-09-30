@@ -61,4 +61,30 @@ Examples (using `polkadot` as the schema):
 - The balances of user `0x1111aaaa` of a ERC20-like token contract with address of `0x2222bbbb` on a smart contract chain: `polkadot://smart-contract-chain-name/srml-contracts/0x2222bbbb/0x1111aaaa`
 
 
+### Encoding
+
+There are two encoding format for SUI.
+
+- Standard encoding
+
+  - Encoded as a URI string
+
+- Custom SCALE ecnoding to avoid unnecessary space usage
+
+- ```rust
+  struct SRUI {
+    userinfo: Option<ParaId>,
+    host: Option<ChainId>,
+    path_components: Vec<RuntimeStr>,
+    query: Option<RuntimeStr>,
+    fragment: Option<RuntimeStr>
+  };
+  type RuntimeStr = Vec<u8>;
+  type ParaId = u32; // per Polkadot implementation
+  enum ChainId {
+    Id(u32),
+    Name(RuntimeStr)
+  };
+  ```
+
 
