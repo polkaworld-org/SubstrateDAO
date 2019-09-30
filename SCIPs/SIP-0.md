@@ -1,18 +1,16 @@
-# SIP
-
-| SIP | Title                     | Status | Type | Created    | Updated |
-| ----| ------------------------- | -------| -----| ---------- | -------- |
-| 0   | SIP Purpose and Guidlines | WIP | Meta | 2019-09-30 | Text     |
+| SIP | Title                      | Status | Type | Created    | Updated  |
+| ----| -------------------------- | -------| -----| ---------- | -------- |
+| 0   | SIP Purpose and Guidelines | WIP    | Meta | 2019-09-30 |          |
 
 ## 1. What is SIP
-SIP stands for Substrate Improvement Proposal. An SIP document describes new features of Substrate, or improvements of its processes to the Substrate community. The SIP should document conscise technical specification of the proposal and rationale behind it. The SIP author is responsible for building consenus within the community and documenting discussions and disagreements. Each SIP has a unique index number.
+SIP stands for Substrate Improvement Proposal. An SIP document describes new features of Substrate, or improvements of its processes to the Substrate community. The SIP should document concise technical specification of the proposal and rationale behind it. The SIP author is responsible for building consensus within the community and documenting discussions and disagreements. Each SIP has a unique index number.
 
 ## 2. SIP Rationale
 SIP is the primary mechanism for proposing new features and improvements, for collecting community input on an issue or idea, and for documenting specification and design decisions that go into Substrate. Each SIP is maintained as a text file in a versioned repository, hence its revision history is also the revision history of the proposal.
 
 ## 3. SIP Types
 There are two types of SIP:
-1. **Request for Change (RFC)** SIP: a request SIP describes functional chnages, improvements or new features on Substrate. For example SRC20 (ERC20-like) fungible asset token standard.
+1. **Request for Change (RFC)** SIP: a request SIP describes functional changes, improvements or new features on Substrate. For example SRC20 (ERC20-like) fungible asset token standard.
 2. **Meta** SIP: describes a process surrounding Substrate or proposes a change to a process. For example the SIP itself.
 
 ## 4. SIP Workflow
@@ -25,7 +23,7 @@ There are two types of SIP:
 ```
 
 1. **WIP as Work in Progress**: once a SIP champion has asked Substrate community for whether an idea has any chance of support, he/she will submit a SIP as a pull request.
-2. **Draft**: once the SIP is agreeable, an SIP editor will merge the PR. Subsequent PRs can be submitted to this SIP. SIPs ready for review should include implementation details and change status to **Draft**. 
+2. **Draft**: once the SIP is agreeable, an SIP editor will merge the PR and ***assign a SIP number***. Subsequent PRs can be submitted to this SIP. SIPs ready for review should include implementation details and change status to **Draft**. 
 3. **Accepted**: If an SIP is accepted, then status will change to "Accept". But if there are material changes or substantial unaddressed technical complaints, it'd revert to **WIP** with correction notes.
 4. **Rejected**: an SIP would be rejected due to major, uncorrectable flaws.
 5. **Dropped**: This SIP is no longer pursued by the original authors or it may not be a (technically) preferred option anymore.
@@ -75,6 +73,6 @@ TBD
 
 ## Discussions
 1. Decide SIP naming: SCIP (Substrate Community Improvement Proposal), SDIP (Substrate DAO Improvement Proposal), or SIP (Substrate Improvement Proposal)...
-2. Decide SIP location: a separate SubstrateDAO github organisation, and folder structure
-3. Decide on review process - norminated PR reviewers and process
+2. Decide SIP location: a separate SubstrateDAO GitHub organization, and folder structure
+3. Decide on review process - nominated PR reviewers and process
 4. Decide review process - SIP review process, call periods etc
